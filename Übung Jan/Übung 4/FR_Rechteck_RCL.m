@@ -12,7 +12,7 @@
 
 close all;
                         
-Fs = 10e6;               %[Hz] Abtastfrequenz 
+Fs = 10^6;               %[Hz] Abtastfrequenz 
 t = (0:1/Fs:0.02);      %[s] Zeitachse für 20 ms
 f0 = 140;                   %[Hz] Frequenz der Grundschwingung
 N = 1001;                %  Maximale Ordnung der Oberschwingungen (ungerade !!!)

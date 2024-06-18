@@ -29,7 +29,7 @@ for m=2:2:N
     xlabel ('Zeit [s] -->');
     ylabel ('Signal -->');
     legend('x',[num2str(m) '. OS'])
-    title(['Rechtecksignal mit Grundschwingung + ' num2str(m) ' harmonische Oberschwingungen']);
+    title(['Sägezahnsignal mit Grundschwingung + ' num2str(m) ' harmonische Oberschwingungen']);
 
-    pause
+    %pause
 end;
