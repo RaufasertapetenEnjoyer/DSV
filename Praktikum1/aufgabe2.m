@@ -1,3 +1,4 @@
+clear;
 % Legen Sie die Variablen a = 3, b = -9 und c = 6 an und verwenden Sie MATLAB, um die beiden
 % Ergebnisse x1 und x2 des folgenden Ausdrucks zu berechnen:
 
@@ -35,4 +36,5 @@ disp("4.375e5 ergibt: ");
 disp(4.375e5); % => 4.375 * 10^5
 
 % 0.002468 lautet in dieser Schreibweise: 2468e-6 => 2468 * 10^(-6)
+disp("2468e-6 ergibt: ");
 disp(2468e-6); % rundet das Ergebnis automatisch

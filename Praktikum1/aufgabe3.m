@@ -1,3 +1,4 @@
+clear;
 % Legen Sie folgende Matrix A an:
 A = [5, -3, 11; 4, -10, 6]; % alternativ ohne Komma
 

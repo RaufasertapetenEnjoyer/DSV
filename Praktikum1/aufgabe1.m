@@ -1,12 +1,13 @@
+clear;
 % Was tut der Befehl „fplot” und wie können Sie ihn verwenden?
 %   wird verwendet um Funktion in bestimmtem Bereich zu plotten
-%   Eingaben: Fuinkion f und Interval a bis b ([a, b])
+%   Eingaben: Funktion f und Interval a bis b ([a, b])
 
 f = @(x) x.^2;
 fplot(f, [-5,5]);
 
-% Was ist der Unterschied in der Ausgabe bei Matlab zwischen einer Zeile die mit einem Semikolon
-% abgeschlossen wird und einer die ohne Semikolon abgeschlossen wird?
+%  Was ist der Unterschied in der Ausgabe bei Matlab zwischen einer Zeile die mit einem Semikolon
+%  abgeschlossen wird und einer die ohne Semikolon abgeschlossen wird?
 %   das Semikolon unterdrückt die Ausgabe eines Ausdrucks auf der Konsole, wird eine Zeile
 %   ohne Semikolon beendet, so wird der Ausdruck von z.B. Wert einer Variable auf
 %   der Konsole ausgegeben
@@ -23,8 +24,11 @@ disp(a);
 % Dividieren Sie jeden dritten Wert von ’a’ durch 4, ohne die restlichen Werte zu ändern oder zu
 % entfernen
 
-disp("Das Ergebnis von a/3 ist: ");
-disp(a./3); % a./3 heißt jedes Element wird einzeln durch 3 geteilt, a/3 wäre Matrixdivision wenn a quadratisch
+disp("Das Ergebnis von a/4 an jeder dritten Stelle ist: ");
+for i = 1:3:length(a)
+    a(1,i) = a(1,i) ./4;
+end
+disp(a);
 
 % Erstellen Sie einen Vektor ’b’ von -3 bis 3 in 1-er Schritten
 
