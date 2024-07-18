@@ -25,9 +25,7 @@ disp(a);
 % entfernen
 
 disp("Das Ergebnis von a/4 an jeder dritten Stelle ist: ");
-for i = 1:3:length(a)
-    a(1,i) = a(1,i) ./4;
-end
+a(1, 3:3:length(a)) = a(1, 3:3:length(a)) ./ 4;
 disp(a);
 
 % Erstellen Sie einen Vektor ’b’ von -3 bis 3 in 1-er Schritten
@@ -42,13 +40,15 @@ c = dot(a,b);
 disp("Das Skalarprodukt beträgt: ");
 disp(c);
 
-% Berechnen Sie die Werte des Sinus der Werte von ’a’, z.B. in einer Variable ’d’
+% Berechnen Sie die Werte des Sinus der Werte von ’a’, z.B. in einer
+% Variable ’d’ -> Variable heißt 'sinusWerte'
 
 sinusWerte = sin(a);
 disp("Die Sinuswerte von a lauten: ");
 disp(sinusWerte);
 
-% Geben Sie die Anzahl der Elemente des Vektors ’b’ aus
+% Geben Sie die Anzahl der Elemente des Vektors ’b’ aus 
+% -> Variable 'lengthB'
 
 lengthB = length(b);
 disp("Die länge des Vektor b beträgt: ");

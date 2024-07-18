@@ -19,13 +19,13 @@ disp(x2);
 
 % Berechnen Sie die Werte:
 
-disp("pi / 4 ergibt: ");
+disp("sin(pi / 4) ergibt: ");
 disp(sin(pi./4));
 
-disp("Der cos von 45° ist:");
+disp("cos(45°) ist:");
 disp(cos(deg2rad(45))); % wandle 45 von radiant zu degree um (Funktion: deg2rad) und dann bilde den Cosinus
 
-disp("Der arctan von 1 ist: ");
+disp("arctan(1) ist: ");
 disp(atan(1));
 
 

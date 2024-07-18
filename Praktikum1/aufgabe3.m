@@ -43,11 +43,11 @@ disp(diagonale);
 
 % Entfernen Sie die zweite Spalte aus B
 
-disp("B bevor letzte Spalte gelöscht: ");
+disp("B bevor zweite Spalte gelöscht: ");
 disp(B);
 
-disp("B nach letzte Spalte gelöscht: ");
-B = B(:, 1 : (size(B,2) - 1)); % size(B,2) ist die Anzahl der Spalten und 
+disp("B nachdem zweite Spalte gelöscht: ");
+B(:, 2) = []; % size(B,2) ist die Anzahl der Spalten und 
                                % 1 : (size(B,2) - 1) => 1 : 2 nimmt die erste und zweite Spalte
 disp(B);
 
