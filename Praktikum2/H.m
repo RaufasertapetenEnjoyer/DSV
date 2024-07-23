@@ -1,4 +1,4 @@
-function [H] = H(fMin, fMax, v)
+function [f,H] = H(fMin, fMax, v)
 a = log10(fMin);
 b = log10(fMax);
 f = logspace(a,b);  %[Hz]
