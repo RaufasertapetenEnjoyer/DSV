@@ -5,7 +5,7 @@ m = [1 2 3 4 6 8 10 12 14 16 18 20 24]; % Vektor der implementierten Obertöne
 c_m = [0 0.7092 0 1 0.2530 0.1794 0.0903 0 0 0 0.1 0.05 0.1];
 mainVolume = 0.1;
 
-%{
+
 output = makeTone(44, 0.5, mainVolume);
 output = [output makeTone(47, 0.5, mainVolume)];
 output = [output makeTone(51, 0.5, mainVolume)];
@@ -35,5 +35,3 @@ function y = makePause(pauseLength)
     global Fs lengthOf1;
 	y = zeros(1, floor(Fs * pauseLength * lengthOf1));
 end
-
-%}
