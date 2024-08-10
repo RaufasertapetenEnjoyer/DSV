@@ -1,3 +1,4 @@
+clear;
 global Fs lengthOf1 m c_m;
 Fs = 44100; % Samplerate
 lengthOf1 = 0.8; % Dauer einer "ganzen Note" in Sekunden
