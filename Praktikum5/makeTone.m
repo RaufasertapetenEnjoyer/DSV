@@ -1,7 +1,7 @@
 function x = makeTone(n, fraction, volume)
-    global lengthOf1 c_m m Fs;
+    global lengthOf1 c_m m Fs fa1;
 
-    fn = calculateFrequency(440, n);
+    fn = calculateFrequency(fa1, n);
 
     t = fraction * lengthOf1;
 
