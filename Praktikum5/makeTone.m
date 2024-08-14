@@ -1,18 +1,18 @@
-function x = makeTone(n, fraction, volume)
+function x = makeTone(n, fraction, volume) % n: Tastennummer; fraction: Tonlänge anteilig (0-1); volume: Lautstärke (0-1)
     global lengthOf1 c_m m Fs fa1;
 
     fn = calculateFrequency(fa1, n);
 
-    t = fraction * lengthOf1;
+    T = fraction * lengthOf1;
 
-    tVector = 0:1/Fs:t;
+    t = 0:1/Fs:T;
 
     w_n = 2 * pi * fn;
     w_0 = w_n / 2;
 
-    x = zeros(size(t));
+    x = zeros(size(T));
     for k = 1:length(m)
-        x = x + c_m(k) * sin(m(k) * w_0 * tVector);
+        x = x + c_m(k) * sin(m(k) * w_0 * t);
     end
 
     x = x .* volume;
