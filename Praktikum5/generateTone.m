@@ -9,8 +9,8 @@ function x = generateTone(fn, Td)
     w_n = 2 * pi * fn;
     w_0 = w_n / 2;
 
-    x = zeros(size(t));
+    x = zeros(1, length(t));
     for k = 1 : length(m)
-        x = x + c_m(1,k) * sin(m(k) * w_0 * t);
+        x = x + c_m(1,k) * sin(m(1,k) * w_0 * t);
     end
 end
