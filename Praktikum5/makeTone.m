@@ -10,7 +10,7 @@ function x = makeTone(n, fraction, volume) % n: Tastennummer; fraction: Tonläng
     w_n = 2 * pi * fn;
     w_0 = w_n / 2;
 
-    x = zeros(size(T));
+    x = zeros(1, length(T));
     for k = 1:length(m)
         x = x + c_m(k) * sin(m(k) * w_0 * t);
     end
